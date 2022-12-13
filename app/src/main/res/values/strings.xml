@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="start_fragment_label">Start Fragment</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="third_fragment_label">Third Fragment</string>
+    <string name="start">Начать</string>
+    <string name="next">Вперед</string>
+    <string name="prev">Назад</string>
+    <string name="operation_plus">+</string>
+    <string name="operation_minus">-</string>
+    <string name="operation_multiplication">x</string>
+    <string name="operation_division">/</string>
+    <string name="number">0</string>
+    <string name="fragment_1">1</string>
+    <string name="fragment_2">2</string>
+    <string name="fragment_3">3</string>
+    <string name="fragment_4">4</string>
+
+
+    <string name="enter_first_number">Введите первое число:</string>
+    <string name="enter_second_number">Введите второе число:</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_third_fragment">Выберите математическую операцию:</string>
+    <string name="result_is">Результат:</string>
+</resources>
