@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    public var firstNum = -1
+    public var secondNum = -1
+    public var operation = "Null" // это не умножение, это X
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

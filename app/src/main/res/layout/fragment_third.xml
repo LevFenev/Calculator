@@ -6,6 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".ThirdFragment">
 
+    <Button
+        android:id="@+id/buttonThirdGoToFragment1"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonThirdGoToFragment2"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <Button
+        android:id="@+id/buttonThirdGoToFragment3"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <Button
+        android:id="@+id/buttonThirdGoToFragment4"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="319dp" />
+
     <TextView
         android:id="@+id/textview_third"
         android:layout_width="wrap_content"
@@ -46,10 +87,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="143dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/operation_minus"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOperationDivision"
+        app:layout_constraintBottom_toTopOf="@id/buttonOperationDivision"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonOperationPlus"
         app:layout_constraintTop_toBottomOf="@+id/textview_third" />
@@ -64,10 +105,10 @@
         android:layout_marginBottom="108dp"
         android:text="@string/operation_division"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_third_next"
+        app:layout_constraintBottom_toTopOf="@id/button_third_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonOperationMultiplication"
-        app:layout_constraintTop_toBottomOf="@+id/buttonOperationMinus" />
+        app:layout_constraintStart_toEndOf="@id/buttonOperationMultiplication"
+        app:layout_constraintTop_toBottomOf="@id/buttonOperationMinus" />
 
     <Button
         android:id="@+id/buttonOperationMultiplication"
@@ -79,10 +120,10 @@
         android:layout_marginBottom="108dp"
         android:text="@string/operation_multiplication"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_third_next"
-        app:layout_constraintEnd_toStartOf="@+id/buttonOperationDivision"
+        app:layout_constraintBottom_toTopOf="@id/button_third_next"
+        app:layout_constraintEnd_toStartOf="@id/buttonOperationDivision"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonOperationPlus" />
+        app:layout_constraintTop_toBottomOf="@id/buttonOperationPlus" />
 
     <Button
         android:id="@+id/buttonOperationPlus"
@@ -94,9 +135,9 @@
         android:layout_marginBottom="5dp"
         android:text="@string/operation_plus"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOperationMultiplication"
-        app:layout_constraintEnd_toStartOf="@+id/buttonOperationMinus"
+        app:layout_constraintBottom_toTopOf="@id/buttonOperationMultiplication"
+        app:layout_constraintEnd_toStartOf="@id/buttonOperationMinus"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_third" />
+        app:layout_constraintTop_toBottomOf="@id/textview_third" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

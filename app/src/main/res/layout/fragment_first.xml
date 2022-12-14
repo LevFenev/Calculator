@@ -11,13 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_first_number"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/button_first_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/button_first_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next"
@@ -36,13 +36,13 @@
         android:layout_marginBottom="100dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/button_first_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />
 
     <Button
-        android:id="@+id/goToFragment2"
+        android:id="@+id/buttonFirstGoToFragment2"
         android:layout_width="63dp"
         android:layout_height="47dp"
         android:layout_marginBottom="21dp"
@@ -51,7 +51,7 @@
         tools:layout_editor_absoluteX="130dp" />
 
     <Button
-        android:id="@+id/goToFragment1"
+        android:id="@+id/buttonFirstGoToFragment1"
         android:layout_width="63dp"
         android:layout_height="47dp"
         android:layout_marginStart="31dp"
@@ -60,12 +60,12 @@
         android:layout_marginBottom="21dp"
         android:text="@string/fragment_1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/goToFragment2"
+        app:layout_constraintEnd_toStartOf="@id/buttonFirstGoToFragment2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/goToFragment3"
+        android:id="@+id/buttonFirstGoToFragment3"
         android:layout_width="63dp"
         android:layout_height="47dp"
         android:layout_marginBottom="21dp"
@@ -74,7 +74,7 @@
         tools:layout_editor_absoluteX="226dp" />
 
     <Button
-        android:id="@+id/goToFragment4"
+        android:id="@+id/buttonFirstGoToFragment4"
         android:layout_width="63dp"
         android:layout_height="47dp"
         android:layout_marginBottom="21dp"

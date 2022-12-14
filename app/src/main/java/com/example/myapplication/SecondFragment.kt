@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentSecondBinding
 
@@ -33,11 +34,14 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecondNext.setOnClickListener {
+            (activity as MainActivity).secondNum = it.findViewById<EditText>(R.id.editSecondTextNumber).text.toString().toInt()
             findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
         }
         binding.buttonSecondPrev.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+
+        // когда появятся кнопки на другие фрагменты, вставить туда строчку 37
     }
 
     override fun onDestroyView() {

@@ -36,6 +36,25 @@ class ThirdFragment : Fragment() {
         binding.buttonThirdPrev.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_SecondFragment)
         }
+
+        (activity as MainActivity).operation = "Null" // каждый раз, когда пользователь попадает на эту страницу, знак будет приравниваться к Null
+
+        // кнопки мат. операций
+        binding.buttonOperationPlus.setOnClickListener {
+            (activity as MainActivity).operation = "+"
+        }
+
+        binding.buttonOperationMinus.setOnClickListener {
+            (activity as MainActivity).operation = "-"
+        }
+
+        binding.buttonOperationMultiplication.setOnClickListener {
+            (activity as MainActivity).operation = "*"
+        }
+
+        binding.buttonOperationDivision.setOnClickListener {
+            (activity as MainActivity).operation = "/"
+        }
     }
 
     override fun onDestroyView() {

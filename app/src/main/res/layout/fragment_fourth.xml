@@ -6,6 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".FourthFragment">
 
+    <Button
+        android:id="@+id/buttonFourthGoToFragment1"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFourthGoToFragment3"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <Button
+        android:id="@+id/buttonFourthGoToFragment4"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="319dp" />
+
+    <Button
+        android:id="@+id/buttonFourthGoToFragment2"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/fragment_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="130dp" />
+
     <TextView
         android:id="@+id/textview_fourth"
         android:layout_width="wrap_content"

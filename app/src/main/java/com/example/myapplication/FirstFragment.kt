@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView as TextView
 import androidx.navigation.fragment.findNavController
@@ -33,17 +34,23 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        var textview = getView<TextView>(R.id.editFirstTextNumber) // не работает
-        binding.buttonFirst.setOnClickListener {
+        binding.buttonFirstNext.setOnClickListener {
+            (activity as MainActivity).firstNum = it.findViewById<EditText>(R.id.editFirstTextNumber).text.toString().toInt()
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
-        binding.goToFragment1.setOnClickListener {
+        binding.buttonFirstGoToFragment1.setOnClickListener {
 //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
-        binding.goToFragment2.setOnClickListener {
-            // переменная типа стринг, в которую положете значение из строки с числом
+        binding.buttonFirstGoToFragment2.setOnClickListener {
+            (activity as MainActivity).firstNum = it.findViewById<EditText>(R.id.editFirstTextNumber).text.toString().toInt()
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+        binding.buttonFirstGoToFragment3.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
+        }
+        binding.buttonFirstGoToFragment4.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_FourthFragment)
         }
 
     }
